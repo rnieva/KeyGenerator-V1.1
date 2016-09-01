@@ -1,0 +1,49 @@
+﻿<Window x:Name="KeyGenerator" x:Class="WpfExample1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfExample1"
+        mc:Ignorable="d"
+        Title="Key Generator 1.1" Height="584" Width="726">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="108*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="634*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="MyButton1" Content="Generate" HorizontalAlignment="Left" Margin="28,132,0,0" VerticalAlignment="Top" Width="95" Grid.Column="2" RenderTransformOrigin="-0.467,0.85" Background="#FFFFCC00" Height="38"/>
+        <Label x:Name="MyLabel1" Content="" HorizontalAlignment="Left" Margin="28,496,0,0" VerticalAlignment="Top" Width="270" BorderThickness="1" BorderBrush="Black" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="215,56,0,0" TextWrapping="Wrap" Text="Write a Word or Sentence" VerticalAlignment="Top" Width="177" IsEnabled="False" Grid.Column="2" TextChanged="textBox1_TextChanged" Cursor="" Visibility="Hidden"/>
+        <CheckBox x:Name="Numbers" Content="Numbers" HorizontalAlignment="Left" Margin="28,29,0,0" VerticalAlignment="Top" Checked="checkBox_Checked" Width="86" IsChecked="True" Click="Numbers_Click" RenderTransformOrigin="0.5,-3.133" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="Letters" Content="Letters" HorizontalAlignment="Left" Margin="28,67,0,0" VerticalAlignment="Top" Click="Letters_Click"/>
+        <CheckBox x:Name="Alphanumeric" Content="AlphaNumeric" HorizontalAlignment="Left" Margin="28,132,0,0" VerticalAlignment="Top" Click="Alphanumeric_Click" Grid.ColumnSpan="2" RenderTransformOrigin="0.031,1.067"/>
+        <RadioButton x:Name="_8bits" Content="64 Bytes" HorizontalAlignment="Left" Margin="28,29,0,0" VerticalAlignment="Top" IsChecked="True" RenderTransformOrigin="-1.021,0.467" Grid.Column="2"/>
+        <RadioButton x:Name="_16bits" Content="128 Bytes" HorizontalAlignment="Left" Margin="28,64,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <CheckBox x:Name="Uppercase2" Content="Uppercase" HorizontalAlignment="Left" Margin="57,165,0,0" VerticalAlignment="Top" Click="Uppercase2_Click" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="Symbols" Content="Symbols" HorizontalAlignment="Left" Margin="28,200,0,0" VerticalAlignment="Top" Click="Symbols_Click"/>
+        <CheckBox x:Name="randomKey" Content="Random Key" HorizontalAlignment="Left" Margin="215,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.479,0" IsChecked="True" Grid.Column="2" Click="randomKey_Click"/>
+        <CheckBox x:Name="Mixtotal" Content="MixTotal" HorizontalAlignment="Left" Margin="28,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.239,0.2" Click="Mixtotal_Click"/>
+        <CheckBox x:Name="Uppercase1" Content="Uppercase" HorizontalAlignment="Left" Margin="57,100,0,0" VerticalAlignment="Top" Click="Uppercase1_Click" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="_32bits" Content="256 Bytes" HorizontalAlignment="Left" Margin="28,100,0,0" VerticalAlignment="Top" Grid.Column="2" RenderTransformOrigin="0.556,1.733"/>
+        <CheckBox x:Name="RNGC" Content="RNGC" Grid.Column="2" HorizontalAlignment="Left" Margin="118,29,0,0" VerticalAlignment="Top" Click="RNGC_Click" IsChecked="True"/>
+        <CheckBox x:Name="SnowC" Content="SnowC" Grid.Column="2" HorizontalAlignment="Left" Margin="118,64,0,0" VerticalAlignment="Top" Click="SnowC_Click"/>
+        <Button x:Name="MyButton2" Content="Save Key" Grid.Column="2" HorizontalAlignment="Left" Margin="28,185,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="MyButton3" Content="View Keys" Grid.Column="2" HorizontalAlignment="Left" Margin="28,218,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.493,-0.85"/>
+        <TextBox x:Name="textBox4" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="23" Margin="28,453,0,0" TextWrapping="Wrap" Text="Site Key" VerticalAlignment="Top" Width="270"/>
+        <Button x:Name="MyButton4" Content="Export to txt" HorizontalAlignment="Left" Margin="28,320,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2"/>
+        <Button x:Name="MyButton5" Content="Send Mail" Grid.Column="2" HorizontalAlignment="Left" Margin="28,287,0,0" VerticalAlignment="Top" Width="75" MouseEnter="textbox4" MouseLeave="textbox4Out"/>
+        <CheckBox x:Name="MyKey" Content="My Key" Grid.Column="2" HorizontalAlignment="Left" Margin="118,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.493,1.467" Click="MyKey_Click"/>
+        <TextBox x:Name="textBox5" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="215,95,0,0" TextWrapping="Wrap" Text="Write your own Key" VerticalAlignment="Top" Width="177" Visibility="Hidden"/>
+        <Button x:Name="MyButton6" Content="Delete Key" Grid.Column="2" HorizontalAlignment="Left" Margin="28,250,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox x:Name="listBox1" Grid.Column="2" HorizontalAlignment="Left" Height="187" Margin="202,153,0,0" VerticalAlignment="Top" Width="310" SelectionChanged="selListiBox1">
+            <ListBox.ItemBindingGroup>
+                <BindingGroup/>
+            </ListBox.ItemBindingGroup>
+        </ListBox>
+        <TextBox x:Name="TextBoxDelete" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="118,251,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="46" RenderTransformOrigin="0.522,0.65"/>
+        <Button x:Name="MyButton7" Content="DataGrid" Grid.Column="2" HorizontalAlignment="Left" Margin="28,352,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="MyButton8" Content="DatagridView" Grid.Column="2" HorizontalAlignment="Left" Margin="28,387,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
