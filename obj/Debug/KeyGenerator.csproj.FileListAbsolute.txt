@@ -16,8 +16,6 @@ C:\Users\Rob\Documents\Visual Studio 2015\Projects\WpfExample1\WpfExample1\bin\D
 C:\Users\Rob\Documents\Visual Studio 2015\Projects\WpfExample1\WpfExample1\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Rob\Documents\Visual Studio 2015\Projects\WpfExample1\WpfExample1\bin\Debug\EntityFramework.xml
 C:\Users\Rob\Documents\Visual Studio 2015\Projects\WpfExample1\WpfExample1\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Rob\Documents\Visual Studio 2015\Projects\WpfExample1\WpfExample1\bin\Debug\KeyStore.dll
-C:\Users\Rob\Documents\Visual Studio 2015\Projects\WpfExample1\WpfExample1\bin\Debug\KeyStore.pdb
 C:\Users\Rob\Documents\Visual Studio 2015\Projects\WpfExample1\WpfExample1\bin\Debug\MySql.Data.dll
 C:\Users\Rob\Documents\Visual Studio 2015\Projects\WpfExample1\WpfExample1\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\Rob\Documents\Visual Studio 2015\Projects\WpfExample1\WpfExample1\obj\Debug\DataGridWindow.g.cs
