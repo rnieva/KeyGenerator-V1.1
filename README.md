@@ -15,4 +15,6 @@ This software has been developed for C# training purpose.
 - Using Microsoft.Office.Interop.Excel for export to Excel File
 - Others Tools used: TextBox, DataGrid, DataGridView.
 
+Main Screen
 
+![alt tag](https://raw.github.com/rnieva/KeyGenerator-V1.1/master/captureMainScreen.png)
