@@ -13,7 +13,7 @@ This software has been developed for C# training purpose.
 - Using Entity FrameWork 6.1.3
 - Using Security.Cryptography, for RNGCryptoServiceProvider class
 - Using Microsoft.Office.Interop.Excel for export to Excel File
-- Others Tools used: TextBox, DataGrid, DataGridView.
+- Others Tools used: WPF, Windows Forms, DataGrid, DataGridView.
 
 Main Screen
 
