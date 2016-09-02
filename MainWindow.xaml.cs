@@ -129,7 +129,7 @@ namespace WpfExample1
             {
                 MailMessage email = new MailMessage();
                 email.To.Add(new MailAddress(emailrecipient));
-                email.From = new MailAddress("nieva_roberto@hotmail.com", "KeyGenerator");
+                email.From = new MailAddress("mail_address@ser.com", "KeyGenerator");
                 email.Subject = " Keys-Store ( " + DateTime.Now.ToString("dd / MMM / yyy hh:mm:ss") + " ) ";
                 email.Body = "Keys <br>";
                 System.IO.StreamReader file = new System.IO.StreamReader("TextFile1.txt", true);
@@ -147,7 +147,7 @@ namespace WpfExample1
                 smtp.Port = 25;
                 smtp.EnableSsl = true;
                 smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new NetworkCredential("nieva_roberto@hotmail.com", "XXX"); // xxx, pass email
+                smtp.Credentials = new NetworkCredential("mail_address@server.com", "XXX"); // xxx, pass email
                 try
                 {
                     smtp.Send(email);
